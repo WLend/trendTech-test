@@ -1,0 +1,4 @@
+{
+    "extends": "nest-cli.json",
+    "entryFile": "migrations"
+}

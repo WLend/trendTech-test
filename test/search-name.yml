@@ -1,0 +1,14 @@
+config:
+  target: 'http://localhost:3030'
+  phases:
+    - duration: 30
+      arrivalRate: 50
+      name: Find name
+  defaults:
+    headers:
+      Content-Type: 'application/json'
+scenarios:
+  - flow:
+      - get:
+          name: name
+          url: '/names/find-name/{{$randomString()}}'
